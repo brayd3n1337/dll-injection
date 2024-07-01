@@ -62,7 +62,7 @@ int main() {
 
     if (hProcess == nullptr)
     {
-        ERROR("create handle opening da process (invalid pid?). %lu", GetLastError());
+        ERROR("failed 2 create handle opening da process (invalid pid?). %lu", GetLastError());
         return 1;
     }
 
