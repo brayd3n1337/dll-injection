@@ -52,6 +52,7 @@ int main()
     if (pid == 0)
     {
         ERROR("failed 2 get PID for %s. process not found or access denied. Error: %lu", processName, GetLastError());
+        ERROR("failed 2 create handle opening da process (invalid pid?). %lu", GetLastError());
         return 1;
     }
 
